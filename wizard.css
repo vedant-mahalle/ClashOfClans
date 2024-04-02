@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo a img {
+    height: 40px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 15px;
+    /* text-transform: uppercase; */
+    /* color: white; */
+}
+
+.menu ul {
+    display: flex;
+    float: right;
+}
+
+.menu a {
+    color: white;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all .55s ease;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 25px;
+    z-index: 10001;
+    cursor: pointer;
+    /* visibility: collapse; */
+}
+
+.hero_wizard {
+    height: 100%;
+    width: fit-content;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #070158,#220185, #0281d0);
+    float: right;
+    position: relative;
+    display: grid;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.wizard-img {
+    justify-content: center;
+}
+
+.wizard-img img {
+    width: 510px;
+    height: auto;
+}

@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo a img{
+    height: 40px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 15px;
+    /* text-transform: uppercase; */
+    /* color: white; */
+}
+
+.menu ul {
+    display: flex;
+    float: right;
+}
+
+.menu a {
+    color: white;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all .55s ease;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 25px;
+    z-index: 10001;
+    cursor: pointer;
+    /* visibility: collapse; */
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%); */
+    background: linear-gradient(45deg,rgb(0, 51, 0),rgb(0, 121, 0));
+    position: relative;
+    display: grid;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-img {
+    /* width: fit-content; */
+    justify-content: center;
+    /* margin-right: 50px; */
+}
+
+.Goblin {
+    width: 600px;
+    height: auto;
+}
+
+.hero-text h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    margin: 0 0 30px;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.hero-text h4{
+    font-size: 18px;
+}
+.hero-text p{
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+section{
+    padding: 0 19%;
+}
+#comapre{
+    background-color: #4d9458;
+    color: white;
+    border: none;  
+    margin: 9px;
+    padding: 8px;
+    font-size: large;
+    border-radius: 50px;
+}
+#gameplay a{
+    border: 2px solid white;
+    color:  white;
+    margin: 9px;
+    padding: 8px;
+    border-radius: 50px;
+}
+.hero-text a{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateY(-9px);
+}
+.social {
+    position: absolute;
+    top :50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.social i{
+  display: block;  
+  margin: 26px 0;
+  color: white;
+  font-size: 24px;
+  transition: all .50s ease;
+}
+.social i:hover{
+    color: aqua;
+    transform: translateY(-10px);
+}
+
+@media (max-width:1058px) {
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .social{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width:1460px) {
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+
+@media (max-width:1340px) {
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin: 25px;
+    }
+}
+@media (max-width:1195px) {
+    section{
+        padding:0 3%;
+        transition:.2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+        width: 400px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px ;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .social{
+        display: none;
+    }
+}
+@media (max-width:990px) {
+    #menu-icon{
+        display: block;
+    }
+    .menu ul{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 40vh;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        transition: all .55s ease;
+    }
+    .menu a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .menu.open{
+        /* right: 100%; */
+    }
+}
